@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HREXT07 R00lz!</title>
+  <title>Calorie Counter</title>
   <script
           src="https://code.jquery.com/jquery-3.3.1.js"
           integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
           crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
   <script src="app/app.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 
   <!--
@@ -22,21 +25,46 @@
 √ delete button
 container for the response-feedback (start with alert)
 -->
+
+
+
+
 </head>
 <body>
 
+<div class="container">
 <div class="container-main">
-  <header>My Cruddy App</header>
-  <div class="container-form">
-    <input type="text" class="input-key" placeholder="enter key">
-    <input type="text" class="input-value" placeholder="enter value">
-    <button class="btn-add">Submit</button>
-    <button class="btn-update">Update</button>
-    <button class="btn-delete">Delete</button>
-    <button class="btn-clear">Clear</button>
-  </div>
-  <div class="container-data"></div>
+  <div class='py-2 bg-info'>
+  <img class=' px-1' src="https://img01.deviantart.net/3891/i/2008/015/7/2/hamburger_by_mis3161.jpg" height="63" width="63">
+  <span id="heading" class="py-7 text-white h1">Calorie Counter</span>
+ </div>
+  <div class="container-form  py-2">
+    <input id= "input-key type="text" class="input-key rounded" placeholder="Food Item">
+    <input type="text" class="input-value rounded" placeholder="Calories">
+    <button id="submit" type="button" class="btn btn-outline-info btn-sm">Submit</button>
+    <button id="update" type="button" class="btn btn-outline-info btn-sm">Update</button>
+    <button id="delete" type="button" class="btn btn-outline-danger btn-sm">Delete</button>
+    <button id="clear" type="button" class="btn btn-outline-danger btn-sm">Clear Log</button>
+    
+</div>
+  <div class="container-data border border-dark px-2 py-2 rounded h5"></div>
+</div>
+  <button id="total" type="button" class="btn btn-outline-info btn-sm">Calculate Total</button>
+  <span id="test" class='h5' ></span>
+<div>
+  <a href="https://www.nhs.uk/live-well/healthy-weight/calorie-checker/">Don't know how many calories?</a>
+</div>
+</div>
+  <div class="data-container">
+
 </div>
 
+
+<!--   <button id="total" type="button" class="btn btn-outline-info btn-sm">Total Calories</button> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 </body>
 </html>
